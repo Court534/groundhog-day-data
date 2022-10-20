@@ -2,9 +2,8 @@ import pandas as pd
 import numpy as np
 import sqlite3
 
+# Using pandas to read the data from a CSV file and print the results to the console
 # df = pd.read_csv("C:/Users/CourtneyStow/OneDrive - JCW Resourcing/Desktop/groundhog-day-data.csv")
-
-# print(df)
 
 # path_to_date = 'C:/Users/CourtneyStow/OneDrive - JCW Resourcing/Desktop/'
 # groundhog_data = pd.read_csv(path_to_date + 'groundhog-day-data.csv')
@@ -20,7 +19,7 @@ cur = conn.cursor()
 #           ([year] INTEGER PRIMARY KEY, [punxsutawney_phil] TEXT, [feb_average_temp] TEXT, [march_average_temp] TEXT)
 #           ''')
                      
-conn.commit()
+# conn.commit()
 
 # cur.execute('''
 #           INSERT INTO groundhogdata (year, punxsutawney_phil, feb_average_temp, march_average_temp)
