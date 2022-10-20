@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import sqlite3
 
-# Using pandas to read the data from a CSV file and print the results to the console
+## Using pandas to read the data from a CSV file and print the results to the console
 # df = pd.read_csv("C:/Users/CourtneyStow/OneDrive - JCW Resourcing/Desktop/groundhog-day-data.csv")
 
 # path_to_date = 'C:/Users/CourtneyStow/OneDrive - JCW Resourcing/Desktop/'
@@ -57,10 +57,10 @@ cur = conn.cursor()
 # print (df)
 # conn.commit()
 
-# Accessing the information from the database with pandas
+## Accessing the information from the database with pandas
 df = pd.read_sql_query("SELECT * from groundhogdata", conn)
 
-# Verify that result of SQL query is stored in the dataframe
-print(df.head())
+## Verify that the result of the SQL query is stored in the dataframe
+print(df)
 
 conn.close()
