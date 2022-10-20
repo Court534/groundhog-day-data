@@ -44,15 +44,23 @@ cur = conn.cursor()
 #           ''')
 # conn.commit()
 
-cur.execute('''
-          SELECT
-          year,
-          punxsutawney_phil,
-          feb_average_temp,
-          march_average_temp
-          FROM groundhogdata
-          ''')
+# cur.execute('''
+#           SELECT
+#           year,
+#           punxsutawney_phil,
+#           feb_average_temp,
+#           march_average_temp
+#           FROM groundhogdata
+#           ''')
 
-df = pd.DataFrame(cur.fetchall(), columns=['year','punxsutawney_phil', 'feb_average_temp', 'march_average_temp'])
-print (df)
-conn.commit()
+# df = pd.DataFrame(cur.fetchall(), columns=['year','punxsutawney_phil', 'feb_average_temp', 'march_average_temp'])
+# print (df)
+# conn.commit()
+
+# Accessing the information from the database with pandas
+df = pd.read_sql_query("SELECT * from groundhogdata", conn)
+
+# Verify that result of SQL query is stored in the dataframe
+print(df.head())
+
+conn.close()
