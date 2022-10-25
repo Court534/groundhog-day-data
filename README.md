@@ -70,7 +70,7 @@ conn.commit()
 Picture below shows the SQLite3 table in VScode using the SQLite Viewer extention
 
 
-
+screenshot-database.png
 
 
 Manually selecting the information we want to look at from the database
