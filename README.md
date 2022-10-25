@@ -69,9 +69,7 @@ conn.commit()
 ```
 Picture below shows the SQLite3 table in VScode using the SQLite Viewer extention
 
-
-screenshot-database.png
-
+![screenshot-database](https://user-images.githubusercontent.com/85391216/197860972-d7a2d87f-0103-4115-89e2-34f95eac855c.png)
 
 Manually selecting the information we want to look at from the database
 ```python
